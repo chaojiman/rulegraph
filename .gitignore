@@ -1,0 +1,6 @@
+node_modules/
+dist/
+*.rgp
+.rulegraph-cache/
+coverage/
+*.tsbuildinfo
