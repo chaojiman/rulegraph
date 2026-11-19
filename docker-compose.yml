@@ -1,0 +1,8 @@
+services:
+  rulegraph:
+    build: .
+    image: rulegraph:0.3.0
+    volumes:
+      - ./examples:/data
+    # Compile the bundled example on start; override `command` for match/stats/bench.
+    command: ["compile", "/data/example-clash.yaml", "-o", "/data/example.rgp"]
